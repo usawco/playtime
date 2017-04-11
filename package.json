@@ -1,0 +1,43 @@
+{
+  "name": "playtime",
+  "description": "Playing in my github account",
+  "version": "0.0.1",
+  "author": "Warren Cooper <Warren.Cooper@softwareag.com>",
+  "maintainers": [
+    "Warren Cooper <Warren.Cooper@softwareag.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/usawco/playtime.git"
+  },
+  "keywords": [
+    "playtime",
+    "test"
+
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "express": "^4.15.2",
+    "sinon": "^2.1.0",
+    "winston": "^2.3.1",
+    "eslint": "^3.19.0",
+    "jsdoc": "^3.4.3"
+  },
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "mocha",
+    "lint": "jshint .",
+    "jsdoc": "jsdoc",
+    "gendoc": "node lib/doc-generator",
+    "connTest": "node ./lib/conn-test.js",
+    "scripts": {
+    "test-jenkins": "JUNIT_REPORT_PATH=/report.xml mocha --colors --reporter mocha-jenkins-reporter"
+}
+  },
+  "engines": {
+    "node": ">= 6.10.2"
+  },
+  "license": "SEE LICENSE IN license.txt"
+}
