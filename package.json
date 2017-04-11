@@ -31,10 +31,8 @@
     "lint": "jshint .",
     "jsdoc": "jsdoc",
     "gendoc": "node lib/doc-generator",
-    "connTest": "node ./lib/conn-test.js",
-    "scripts": {
+    "connTest": "node ./lib/conn-test.js", 
     "test-jenkins": "JUNIT_REPORT_PATH=/report.xml mocha --colors --reporter mocha-jenkins-reporter"
-}
   },
   "engines": {
     "node": ">= 6.10.2"
