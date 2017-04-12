@@ -1,4 +1,5 @@
 {
+    "extends": "eslint:recommended",
     "parserOptions": {
         "ecmaVersion": 6,
         "sourceType": "module",
@@ -8,5 +9,9 @@
     },
     "rules": {
         "semi": 2
+    },
+
+    "globals": {
+        "require": true,
     }
 }
