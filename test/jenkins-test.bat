@@ -1,7 +1,7 @@
 echo ==== Running tests ====
-echo node= && node -v
-echo npm= && npm -v
-echo JUNIT_REPORT_PATH= && %JUNIT_REPORT_PATH%
+rem TODO, checking the versions interferes w/ running the test
+rem echo node= && node -v
+rem echo npm= && npm -v
 echo ====
-mocha
+npm run test
 npm run test-jenkins
