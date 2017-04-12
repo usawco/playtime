@@ -1,5 +1,5 @@
 echo ==== Running tests ====
-echo node= && node -v
-echo npm= && npm -v
+rem echo node= && node -v
+rem echo npm= && npm -v
 echo ====
 npm run ci-build
