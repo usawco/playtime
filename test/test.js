@@ -11,7 +11,7 @@ describe('Array', function(){
 describe('Math', function(){
   describe('divide by zero', function(){
     it('1/0 should return "Infinity" ', function(){
-      assert.equal('Infinity', 1/0.1); 
+      assert.equal('Infinity', 1/0); 
     })
   })
 });
