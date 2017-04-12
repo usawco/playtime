@@ -28,13 +28,13 @@
   "main": "./lib/index.js",
   "scripts": {
     "build": "npm run lint && npm run jsdoc && npm run test",
-    "ci-build": "npm run build && npm run test-jenkins",    
+    "ci-build": "npm run build && npm run test-jenkins",
     "unit-test": "mocha test",
     "test": "npm run unit-test",
-    "lint": "eslint lib",
+    "lint": "eslint --config eslintrc --ignore-path eslintignore lib",
     "jsdoc": "jsdoc -d build/api lib",
     "gendoc": "node lib/doc-generator",
-    "connTest": "node ./lib/conn-test.js", 
+    "connTest": "node ./lib/conn-test.js",
     "test-jenkins": "mocha --reporter-options junit_report_path=build/test/report.xml --reporter mocha-jenkins-reporter"
   },
   "engines": {
